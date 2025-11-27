@@ -1,0 +1,60 @@
+#include "comet.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&five_column_transform {
+    col-offset = <5>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 8 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 21 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&pro_micro_spi {
+    status = "okay";
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_LOW>;
+    
+    trackball: trackball@0 {
+        status = "okay";
+        compatible = "pixart,pmw3610";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        
+        /* Rotation setting */
+        rotation-degree = <90>;
+        
+        /* CPI settings */
+        cpi = <2400>;
+        cpi-dividor = <4>;
+        
+        /* Snipe mode settings */
+        snipe-cpi = <800>;
+        snipe-cpi-dividor = <4>;
+        
+        /* Scroll settings */
+        scroll-tick = <32>;
+        
+        /* Invert X axis */
+        invert-x;
+        
+        /* Automouse timeout */
+        automouse-timeout-ms = <750>;
+    };
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+};
