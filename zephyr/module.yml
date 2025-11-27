@@ -1,3 +1,5 @@
+name: zmk-keyboard-comet
+
 build:
   settings:
     board_root: .
