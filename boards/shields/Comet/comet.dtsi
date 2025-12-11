@@ -60,16 +60,13 @@
             , <&key_physical_attrs 100 100  375   4125    1000   398     7895>
             , <&key_physical_attrs 100 100  385    423    1500   398     7895>
             , <&key_physical_attrs 100 100  460    415    2000   398     7895>
-            , <&key_physical_attrs 100 100  940    486   -2000  1102     7895>
-            , <&key_physical_attrs 100 100 1015    423   -1500  1102     7895>
-            , <&key_physical_attrs 100 100 1030    430   -1000     0        0>
+            , <&key_physical_attrs 100 100  940    486 (-2000)  1102     7895>
+            , <&key_physical_attrs 100 100 1015    423 (-1500)  1102     7895>
+            , <&key_physical_attrs 100 100 1030    430 (-1000)     0        0>
             ;
-
-        transform = <&default_transform>;
-        kscan = <&kscan0>;
     };
 
-    default_transform: default_transform {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <5>;
