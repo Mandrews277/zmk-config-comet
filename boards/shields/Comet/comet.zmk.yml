@@ -1,0 +1,14 @@
+file_format: "1"
+id: comet
+name: Comet
+type: shield
+url: https://github.com/Mandrews277/zmk-config-comet
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
+siblings:
+  - comet_left
+  - comet_right
+studio:
+  enabled: true
