@@ -41,11 +41,11 @@
         diode-direction = "col2row";
 
         row-gpios
-			= <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P8  - num row
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P9  - top row
-			, <&pro_micro 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P10 - home row
-			, <&pro_micro 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P16 - bottom row
-			, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P7  - cluster row
+			= <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P8  - num row
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P9  - top row
+			, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P10 - home row
+			, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P16 - bottom row
+			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P7  - cluster row
             ;
     };
 };
