@@ -1,7 +1,7 @@
 #include "comet.dtsi"
 
 &default_transform {
-    col-offset = <6>;
+    col-offset = <0>;
 };
 
 &kscan0 {
