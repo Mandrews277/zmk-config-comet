@@ -44,7 +44,7 @@
 			= <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P8  - num row
             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P9  - top row
 			, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P10 - home row
-			, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P16 - bottom row
+			, <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.11 (D16) - bottom row
 			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P7  - cluster row
             ;
     };
