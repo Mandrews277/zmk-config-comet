@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -7,6 +9,9 @@
     comet_layout: comet_layout {
         compatible = "zmk,physical-layout";
         display-name = "Comet";
+
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
         keys  //                     w   h    x      y     rot    rx      ry
             = <&key_physical_attrs 100 100    0     75       0     0       0>
