@@ -15,7 +15,7 @@
         , <&gpio1 13 GPIO_ACTIVE_HIGH>  // P0.29 (A1/D15) - pinky
         , <&gpio1 15 GPIO_ACTIVE_HIGH>   // P0.02 (A2/D16) - ring
         , <&gpio0 2 GPIO_ACTIVE_HIGH>  // P1.15 (A3/D17) - middle
-        , <&gpio0 29 GPIO_ACTIVE_HIGH>  // P1.13 (D18) - index
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>  // P1.13 (D18) - index
         , <&gpio0 31 GPIO_ACTIVE_HIGH>  // P1.10 (D19) - inner
         ;
 };
