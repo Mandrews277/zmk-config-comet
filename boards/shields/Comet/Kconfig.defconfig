@@ -14,4 +14,7 @@ if SHIELD_COMET_LEFT || SHIELD_COMET_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_SPLIT_BLE
+    default y
+
 endif
