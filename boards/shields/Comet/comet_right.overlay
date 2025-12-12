@@ -1,5 +1,3 @@
-#include "comet.dtsi"
-
 &comet_layout {
     transform = <&default_transform>;
 };
