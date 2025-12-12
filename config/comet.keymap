@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -8,21 +9,21 @@
 
         default_layer {
             bindings = <
-&kp TAB             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp BSPC
-&sys_reset          &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P          &sys_reset
-&bootloader         &kp Z         &kp X         &kp C         &kp V         &kp B           &kp H         &kp J         &kp K         &kp L         &kp SEMICOLON  &bootloader
-&studio_unlock      &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH      &kp G
-                                  &kp SPACE     &kp H         &kp N         &kp V           &kp B         &kp RET
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp BSPC
+&kp CAPSLOCK      &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P          &kp DELETE
+&kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B           &kp H         &kp J         &kp K         &kp L         &kp SEMICOLON  &kp ENTER
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH      &kp RIGHT_SHIFT
+                                              &kp SPACE     &mkp LCLK     &mkp RCLK       &kp SPACE     &mo 1         &mkp MCLK
             >;
         };
 
         lower_layer {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR  &kp DEL
-&trans     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &trans     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
-&trans     &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans     &trans    &trans    &trans
-                             &trans    &trans    &trans       &trans     &trans     &trans
+&kp TILDE    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR  &kp DEL
+&trans       &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &trans
+&sys_reset   &trans    &trans  &trans    &trans    &trans       &trans     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &sys_reset
+&bootloader  &trans    &trans  &trans    &trans    &trans       &trans     &trans     &trans     &trans    &trans    &bootloader
+                               &trans    &trans    &trans       &trans     &trans     &trans
             >;
         };
 
