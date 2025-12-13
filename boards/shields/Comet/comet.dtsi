@@ -76,6 +76,7 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
         diode-direction = "col2row";
+        wakeup-source;
 
         row-gpios
 			= <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P8  - num row
