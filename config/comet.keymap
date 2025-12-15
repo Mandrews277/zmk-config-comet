@@ -7,10 +7,6 @@
 
 / {
 
-    &mt {
-        tapping-term-ms = <500>; // This is the value already set by default
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
