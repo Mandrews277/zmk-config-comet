@@ -118,4 +118,5 @@
             spi-max-frequency = <2000000>;
             duplex = <2048>; // required by 3-wire spi
         };
+    };
 };
