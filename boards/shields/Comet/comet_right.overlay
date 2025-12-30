@@ -21,18 +21,6 @@
         ;
 };
 
-&nrfmacro_spi {
-    // activate this device
-    status = "okay";
-
-    compatible = "nordic,nrf-spim";
-    sck-pin = <22>;
-    mosi-pin = <20>;
-    cs-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
-    // not used, but required by spim binding; can be reuesd in the keymap for normal key press
-    miso-pin = <20>;
-};
-
 /* Enable spi2 bus and the trackball, and define their pins */
 &spi2 {
   status = "okay";
