@@ -105,18 +105,18 @@
 		compatible = "zmk,keymap-trackballs";
 		trackballs = <&trackball>;
 	};
+};
 
-    /* Declare the trackball */
-    &spi2 {
-        compatible = "nordic,nrf-spim";
+/* Declare the trackball */
+&spi2 {
+    compatible = "nordic,nrf-spim";
 
-        trackball: trackball@0 {
-            compatible = "pixart,pmw3610";
-            status = "disabled";
-            reg = <0>;
-            label = "TRACKBALL";
-            spi-max-frequency = <2000000>;
-            duplex = <2048>; // required by 3-wire spi
-        };
+    trackball: trackball@0 {
+        compatible = "pixart,pmw3610";
+        status = "disabled";
+        reg = <0>;
+        label = "TRACKBALL";
+        spi-max-frequency = <2000000>;
+        duplex = <2048>; // required by 3-wire spi
     };
 };
