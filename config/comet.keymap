@@ -47,7 +47,7 @@
         symbols_layer {
             bindings = <
 &trans          &trans                &trans     &trans           &trans                   &trans                  &trans     &trans      &trans       &trans         &trans         &trans
-&trans          &kp LEFT_BRACE        &kp PLUS   &kp KP_EQUAL     &kp RIGHT_BRACE          &kp C_BRIGHTNESS_INC    &kp GRAVE  &kp DOLLAR  &kp PERCENT  &kp CARET      &kp ASTRK      &trans
+&trans          &kp LEFT_BRACE        &kp PLUS   &kp EQUAL     &kp RIGHT_BRACE          &kp C_BRIGHTNESS_INC    &kp GRAVE  &kp DOLLAR  &kp PERCENT  &kp CARET      &kp ASTRK      &trans
 &kp LEFT_SHIFT  &kp LEFT_PARENTHESIS  &kp UNDER  &kp KP_SUBTRACT  &kp RIGHT_PARENTHESIS    &kp K_PLAY_PAUSE        &kp TILDE  &kp EXCL    &kp AT       &kp HASH       &kp AMPERSAND  &kp RIGHT_ALT
 &trans          &kp LEFT_BRACKET      &trans     &kp PERIOD       &kp RIGHT_BRACKET        &kp C_BRIGHTNESS_DEC    &trans     &kp SLASH   &kp PIPE     &kp BACKSLASH  &trans         &trans
                                                  &kp C_VOLUME_UP  &mt LEFT_CONTROL K_MUTE  &kp C_VOL_DN            &trans     &trans      &trans
