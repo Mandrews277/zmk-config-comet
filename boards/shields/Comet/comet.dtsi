@@ -80,11 +80,11 @@
         wakeup-source;
 
         row-gpios
-			= <&gpio1 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // P8  - num row
-            , <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // P9  - top row
-			, <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // P10 - home row
-			, <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // P1.11 (D16) - bottom row
-			, <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // P7  - cluster row
+			= <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P8  - num row
+            , <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P9  - top row
+			, <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P10 - home row
+			, <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.11 (D16) - bottom row
+			, <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P7  - cluster row
             ;
     };
 
