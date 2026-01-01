@@ -53,9 +53,18 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        motion-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        motion-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
+        
+        /* PMW3610 configuration */
+        cpi = <600>;
+        run-downshift-time-ms = <500>;
+        rest1-downshift-time-ms = <5000>;
+        rest2-downshift-time-ms = <30000>;
+        rest1-sample-time-ms = <100>;
+        rest2-sample-time-ms = <200>;
+        rest3-sample-time-ms = <250>;
 
         /*   optional features   */
         // snipe-layers = <1>;
